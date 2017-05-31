@@ -8,7 +8,7 @@
 #include <util/delay.h>
 
 /*
-PORT A
+PORT B
 PB0		=	SCLK
 PB1		=	DN/MOSI
 PB2		=	DC
@@ -25,16 +25,12 @@ PB4		=	SCE
 #define LCD_DN_LO			PORTB &= ~(1<<1)
 #define LCD_SCLK_HI			PORTB |= (1<<0)
 #define LCD_SCLK_LO			PORTB &= ~(1<<0)
-//#define LCD_BACKLIGHT_HI	PORTA |= (1<<5)
-//#define LCD_BACKLIGHT_LO	PORTA &= ~(1<<5)
-
 
 #define LCD_C 0
 #define LCD_D 1
 
 #define LCD_WIDTH	84
 #define LCD_HEIGHT	48
-
 
 const uint8_t PROGMEM ascii_table[][5] =
 {
