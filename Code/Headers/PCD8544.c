@@ -73,25 +73,10 @@ void LCDClear(void) {
 	for (int i = 0; i < LCD_WIDTH*LCD_HEIGHT/8; i++)
 		LCDWrite(LCD_D, 0x00);
 }
-
-/*
-void LCDBacklight(uint8_t enabled) {
-	// Enable or disable backlight
-	if (enabled)
-		LCD_BACKLIGHT_HI;
-	else
-		LCD_BACKLIGHT_LO;
-} 
-*/
-
 void LCDInit(void) {
-	
-	// configure the LCD pins as outputs 
-	// NOTE: Configured in main
 	
 	// initialize the LCD pins
 	LCD_SCE_HI;
-	//LCD_BACKLIGHT_HI;
 	LCD_RST_LO;
 	LCD_RST_HI;
 	
@@ -111,6 +96,3 @@ void LCDBitmap(const unsigned char my_array[]) {
 	for (unsigned short index = 0 ; index < (LCD_WIDTH * LCD_HEIGHT / 8) ; index++)
 		LCDWrite(LCD_D, my_array[index]);
 }
-
-
-
