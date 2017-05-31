@@ -158,7 +158,7 @@ void soda_tick()
 
 int main(void)
 {
-    DDRA = 0x00; PORTA = 0xFF; //input
+    	DDRA = 0x00; PORTA = 0xFF; //input
 	DDRB = 0xFF; PORTB = 0x00; //output
 	DDRC = 0x00; PORTC = 0xFF; //input
 	DDRD = 0xFF; PORTD = 0x00; //output
