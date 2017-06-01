@@ -32,7 +32,6 @@ void soda_tick()
 	switch(state)
 	{
 		case init:
-		LCDInit();
 		LCDClear();
 		LCDBitmap(Menu);
 		state = menu;
