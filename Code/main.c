@@ -38,7 +38,7 @@ void soda_tick()
 		break;
 		
 		case menu:
-		if(my_adc < 350)
+		if(my_adc < 300)
 		{
 			soda_flag = 0;
 			state = soda_toggle;
@@ -73,7 +73,7 @@ void soda_tick()
 		break;
 		
 		case soda_toggle_release:
-		if(my_adc < 350 || my_adc > 700)
+		if(my_adc < 300 || my_adc > 700)
 		{
 			state = soda_toggle_release;
 		}
@@ -84,7 +84,7 @@ void soda_tick()
 		break;
 		
 		case dispense:
-		if(my_adc < 350 || my_adc > 700)
+		if(my_adc < 300 || my_adc > 700)
 		{
 			state = flag_check;
 		}
