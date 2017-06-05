@@ -1,3 +1,6 @@
+//This library has been used with the consent of IEEE @ UCR
+//All credit for this library belongs to IEEE @ UCR
+
 #include "pcd8544.h"
 
 void LCDWrite(uint8_t dc, uint8_t data) {
