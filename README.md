@@ -1,5 +1,6 @@
 # Soda Machine
 This final project for CS120B at UCR was programmed in C with Atmel Studio 7.0.
+YouTube Link: [DIY Soda Machine](https://youtu.be/1zI3h4PBV9M)
 
 ### Major Components
   * **ATmega1284:** *Microprocessor used to control the entire project.*
