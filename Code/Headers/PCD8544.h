@@ -1,3 +1,6 @@
+//This library has been used with the consent of IEEE @ UCR
+//All credit for this library belongs to IEEE @ UCR
+
 #ifndef __pcd8544_h__
 #define __pcd8544_h__
 
