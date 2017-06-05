@@ -27,7 +27,7 @@ void LCDWrite(uint8_t dc, uint8_t data) {
 		data <<= 1;
 	}
 	
-	// Signal LCD to end receiving
+	// Signal LCD to end receiving 
 	LCD_SCE_HI;
 	LCD_DN_LO;
 }
